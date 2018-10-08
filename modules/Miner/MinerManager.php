@@ -165,32 +165,36 @@ class MinerManager extends DBManager{
 					'_logic'=>' '
 				];
 			$result = $this->SelectDataFromTable($GLOBALS['tables']['tMiner']['name'],$selectCondition);
-
+			//file_put_contents("digInfo.txt","s:".$steps.' t:'.$tele.' a:'.$auth);
 			//echo $result;
-
+			
+			
             $arr = mysql_fetch_array($result);
-
-            if($arr['steps']>$steps || $steps<0 || ($steps-$arr['steps'])<0){
-                $steps = $arr['steps'];
-//			   return RESPONDINSTANCE('10');
-            }
            /* if(!$arr){//查询不到矿机
                 return RESPONDINSTANCE('29');
             }*/
+           if($arr['steps']>$steps || $steps<0 || ($steps-$arr['steps'])<0){
+               $steps = $arr['steps'];
+//			   return RESPONDINSTANCE('10');
+           }
            $tStamp = PRC_TIME();
 
 			if(!$arr || empty($arr) || DAY($tStamp) < $arr['vday']){
-                return RESPONDINSTANCE('35');//没有生效的矿机
+				return RESPONDINSTANCE('35');//没有生效的矿机
 			}else{
 				//$arr = mysql_fetch_array($result);
 				//var_export($result);
-
+				$finalTimeStamp = $tStamp;
+               if(DAY($tStamp)> DAY($arr['ltimes'])){
+                        //file_put_contents("newday.txt",DAY($tStamp).'>'.DAY($arr['ltimes']));
+                        $finalTimeStamp = $arr['ltimes'];
+                }
 
 				$mineCount = $this->CaculateMine($steps,$arr['mtype']);
 				$updatePars = [
 					'steps'=>$steps,
 					'mcount'=>$mineCount,
-                    'ltimes'=>$tStamp
+                    'ltimes'=>$finalTimeStamp
 				];
 				$updResult = $this->UpdateDataToTable($GLOBALS['tables']['tMiner']['name'],$updatePars,$selectCondition);
 				if($updResult){
@@ -200,13 +204,14 @@ class MinerManager extends DBManager{
 					$backResult['steps'] = $steps;
 					$backResult['cdays'] = $arr['cdays'];
 					$backResult['tmcount'] = $arr['tmcount'];
-
+					
                     $initResult = null;
+                        //file_put_contents("tStamp.txt",$tStamp.'  '.(DAY($tStamp)*86400+2400));
                     if(DAY($tStamp)> DAY($arr['ltimes'])){
-                        file_put_contents("newday.txt",DAY($tStamp).'>'.DAY($arr['ltimes']));
+                        //file_put_contents("newday.txt",DAY($tStamp).'>'.DAY($arr['ltimes']));
                         $initResult = $this->Init($tele,$auth);
                     }
-
+					
 					if(!empty($initResult)){
                         $backResult['init'] = $initResult;
                     }
@@ -297,9 +302,9 @@ class MinerManager extends DBManager{
 					//echo ($today-1)*86400 . '</br>';
 					//echo $selectArray['ltimes'];
 					//echo $lastDay.' => '.$today;
-					//file_put_contents("init.txt","init:".$lastDay.'<=>'.$today);
+					file_put_contents("init.txt","init:".$lastDay.'<=>'.$today);
 					if($lastDay<$today){//距离上次操作时间过去1天以上，本次操作是否在新的一天
-
+						//file_put_contents("newday.txt",$lastDay." <=> ".$today);
 						$BackMsg['new'] = 'true';//检查是否有升级，并且到升级了时间
 
                         //矿机购买信息校验错误

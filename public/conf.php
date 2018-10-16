@@ -2,6 +2,7 @@
 //核心配置文件
 define('KEY','konglf');
 define('ADMIN','admin_init');
+define('DEFDOWNLOAD','http://fitchain.pro');
 //配置信息
 $options = [
     'debug'  => true,//调试模式
@@ -36,7 +37,9 @@ $modules = [
 	'id' => ['rq'=>'modules/Identity/index.php',//实名认证模块
 			'lib'=>'modules/Identity/IdentityManager.php'],
     'wi'=>['rq'=>'modules/Withdraw/index.php',//提现申请模块
-        'lib'=>'modules/Withdraw/WithdrawManager.php']
+        'lib'=>'modules/Withdraw/WithdrawManager.php'],
+    've'=>['rq'=>'modules/Version/index.php',//版本管理模块
+        'lib'=>'modules/Version/VersionManager.php']
 ];
 
 //矿机订单
@@ -104,6 +107,11 @@ $fallbacks = [
     '56' => "账户余额不足",
     '57' => "提现请求已处理完成",
     '58' => "支付请求失败",
+    '59' => "缺少参数,设置无效",
+    '60' => "更新失败",
+    '61' => "插入失败",
+    '62' => "未找到请求版本",
+    '63' => "应用版本过低,需要更新",
 	'98' => "模块不存在",
 	'99' => "请求错误",
 	'100' => "参数错误:#FALLTEXT#"
@@ -166,6 +174,19 @@ $tables = [
     'tWithdraw'=>[
         'name'=>'withdraw',
         'command'=>"CREATE TABLE `#DBName#` ( `id` TEXT NOT NULL , `tele` TEXT NOT NULL , `fit` DOUBLE NOT NULL , `state` ENUM('SUBMIT','SUCCESS','FAILED') NOT NULL , `cadress` TEXT NOT NULL ,`ctime` INT NOT NULL , PRIMARY KEY (`id`(30))) ENGINE = InnoDB DEFAULT CHARSET=UTF8;"
+    ],
+    'tVersion'=>[
+        'name'=>'version',
+        'command'=>"CREATE TABLE `#DBName#` ( `version` TEXT NOT NULL , `url_android` TEXT NOT NULL , `url_ios` TEXT NOT NULL , `state` ENUM('ONLINE','DOWNLINE') NOT NULL ,`ptime` INT NOT NULL , PRIMARY KEY (`version`(20))) ENGINE = InnoDB DEFAULT CHARSET=UTF8;",
+        'default'=>[
+            'default'=>[
+                'version'=>'1.0.0',
+                'url_android'=>DEFDOWNLOAD,
+                'url_ios'=>DEFDOWNLOAD,
+                'state'=>'ONLINE',
+                'ptime'=> time()
+            ]
+        ]
     ]
 ];
 

@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="db96ecfb-a813-4046-bb18-b7e18ed9ef1c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/conf.php" afterPath="$PROJECT_DIR$/public/conf.php" />
+      <change beforePath="$PROJECT_DIR$/modules/DataBase/DBManager.php" afterPath="$PROJECT_DIR$/modules/DataBase/DBManager.php" />
+      <change beforePath="$PROJECT_DIR$/modules/Order/OrderManager.php" afterPath="$PROJECT_DIR$/modules/Order/OrderManager.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +21,7 @@
       <file leaf-file-name="UserManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/User/UserManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6067">
+            <state relative-caret-position="5984">
               <caret line="176" column="32" lean-forward="false" selection-start-line="176" selection-start-column="19" selection-end-line="176" selection-end-column="32" />
               <folding>
                 <element signature="n#UpdateUUID#0;n#UserManager#0;n#!!top" expanded="false" />
@@ -32,8 +33,8 @@
       <file leaf-file-name="VersionManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/Version/VersionManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="34">
+              <caret line="44" column="11" lean-forward="false" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
               <folding>
                 <element signature="n#IsVersionHigher#0;n#VersionManager#0;n#!!top" expanded="false" />
                 <element signature="n#IsVersion#0;n#VersionManager#0;n#!!top" expanded="false" />
@@ -42,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/Version/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="1224">
+              <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -55,7 +56,7 @@
       <file leaf-file-name="conf.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/conf.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="3774">
               <caret line="111" column="19" lean-forward="true" selection-start-line="111" selection-start-column="19" selection-end-line="112" selection-end-column="22" />
               <folding>
                 <marker date="1539710511509" expanded="true" signature="3359:3564" ph="CREATE TABLE... ##DBName##" />
@@ -75,19 +76,20 @@
       <file leaf-file-name="DBManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/DataBase/DBManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="78" column="20" lean-forward="false" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+            <state relative-caret-position="365">
+              <caret line="184" column="40" lean-forward="true" selection-start-line="184" selection-start-column="40" selection-end-line="184" selection-end-column="40" />
               <folding>
                 <element signature="n#C#0;n#DBManager#0;n#!!top" expanded="false" />
                 <element signature="n#CreateDBLink#0;n#DBManager#0;n#!!top" expanded="false" />
                 <element signature="n#Finished#0;n#DBManager#0;n#!!top" expanded="false" />
                 <element signature="n#CountTableRow#0;n#DBManager#0;n#!!top" expanded="false" />
                 <element signature="n#DBManager#0;n#DBManager#0;n#!!top" expanded="false" />
-                <marker date="1538992398837" expanded="true" signature="854:890" ph="SELECT * FRO... ${$tableName}" />
-                <marker date="1538992398837" expanded="true" signature="1318:1347" ph="INSERT INTO `${$tableName}`... " />
-                <marker date="1538992398837" expanded="true" signature="3015:3043" ph="DELETE FROM `${$tableName}`... " />
-                <marker date="1538992398837" expanded="true" signature="5707:5722" ph="..." />
-                <marker date="1538992398837" expanded="true" signature="5834:5849" ph="..." />
+                <marker date="1539878469774" expanded="true" signature="553:599" ph="select count... " />
+                <marker date="1539878469774" expanded="true" signature="854:890" ph="SELECT * FRO... ${$tableName}" />
+                <marker date="1539878469774" expanded="true" signature="1318:1347" ph="INSERT INTO `${$tableName}`... " />
+                <marker date="1539878469774" expanded="true" signature="3015:3043" ph="DELETE FROM `${$tableName}`... " />
+                <marker date="1539878469774" expanded="true" signature="5930:5945" ph="..." />
+                <marker date="1539878469774" expanded="true" signature="6057:6072" ph="..." />
               </folding>
             </state>
           </provider>
@@ -96,8 +98,8 @@
       <file leaf-file-name="MinerDefManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/MinerDef/MinerDefManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="201" column="8" lean-forward="false" selection-start-line="201" selection-start-column="8" selection-end-line="223" selection-end-column="40" />
+            <state relative-caret-position="508">
+              <caret line="134" column="105" lean-forward="false" selection-start-line="134" selection-start-column="90" selection-end-line="134" selection-end-column="105" />
               <folding>
                 <element signature="n#GetAllSellsInfo#0;n#MinerSellInfo#0;n#!!top" expanded="false" />
                 <element signature="n#GetSurplus#0;n#MinerSellInfo#0;n#!!top" expanded="false" />
@@ -110,20 +112,30 @@
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/MinerDef/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/Validate/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
+            <state relative-caret-position="1020">
               <caret line="30" column="9" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderManager.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderManager.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/Order/OrderManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="779" column="17" lean-forward="true" selection-start-line="764" selection-start-column="12" selection-end-line="779" selection-end-column="17" />
+            <state relative-caret-position="416">
+              <caret line="763" column="29" lean-forward="false" selection-start-line="763" selection-start-column="29" selection-end-line="763" selection-end-column="29" />
               <folding>
                 <element signature="n#ShoppingController#0;n#!!top" expanded="false" />
                 <element signature="n#OrderSuccess#0;n#OrderManager#0;n#!!top" expanded="false" />
@@ -194,18 +206,18 @@
         <option value="$PROJECT_DIR$/modules/Validate/ValidateManager.php" />
         <option value="$PROJECT_DIR$/public/lib.php" />
         <option value="$PROJECT_DIR$/modules/Withdraw/index.php" />
-        <option value="$PROJECT_DIR$/modules/DataBase/DBManager.php" />
         <option value="$PROJECT_DIR$/modules/Identity/index.php" />
         <option value="$PROJECT_DIR$/modules/MinerDef/MinerDefManager.php" />
         <option value="$PROJECT_DIR$/modules/Withdraw/WithdrawManager.php" />
         <option value="$PROJECT_DIR$/modules/Identity/IdentityManager.php" />
         <option value="$PROJECT_DIR$/modules/Miner/index.php" />
-        <option value="$PROJECT_DIR$/modules/Order/OrderManager.php" />
         <option value="$PROJECT_DIR$/modules/Order/index.php" />
         <option value="$PROJECT_DIR$/modules/Miner/MinerManager.php" />
         <option value="$PROJECT_DIR$/modules/Version/index.php" />
         <option value="$PROJECT_DIR$/public/conf.php" />
         <option value="$PROJECT_DIR$/modules/Version/VersionManager.php" />
+        <option value="$PROJECT_DIR$/modules/DataBase/DBManager.php" />
+        <option value="$PROJECT_DIR$/modules/Order/OrderManager.php" />
       </list>
     </option>
   </component>
@@ -386,16 +398,19 @@
       <workItem from="1538886592250" duration="3975000" />
       <workItem from="1539531561485" duration="2754000" />
       <workItem from="1539698733752" duration="12934000" />
+      <workItem from="1539782808562" duration="2130000" />
+      <workItem from="1539875740312" duration="1601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191844000" />
+    <option name="totallyTimeSpent" value="195575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -478,6 +493,12 @@
             <element signature="n#Finished#0;n#DBManager#0;n#!!top" expanded="false" />
             <element signature="n#CountTableRow#0;n#DBManager#0;n#!!top" expanded="false" />
             <element signature="n#DBManager#0;n#DBManager#0;n#!!top" expanded="false" />
+            <marker date="1539878469774" expanded="true" signature="553:599" ph="select count... " />
+            <marker date="1539878469774" expanded="true" signature="854:890" ph="SELECT * FRO... ${$tableName}" />
+            <marker date="1539878469774" expanded="true" signature="1318:1347" ph="INSERT INTO `${$tableName}`... " />
+            <marker date="1539878469774" expanded="true" signature="3015:3043" ph="DELETE FROM `${$tableName}`... " />
+            <marker date="1539878469774" expanded="true" signature="5930:5945" ph="..." />
+            <marker date="1539878469774" expanded="true" signature="6057:6072" ph="..." />
           </folding>
         </state>
       </provider>
@@ -569,6 +590,12 @@
             <element signature="n#Finished#0;n#DBManager#0;n#!!top" expanded="false" />
             <element signature="n#CountTableRow#0;n#DBManager#0;n#!!top" expanded="false" />
             <element signature="n#DBManager#0;n#DBManager#0;n#!!top" expanded="false" />
+            <marker date="1539878469774" expanded="true" signature="553:599" ph="select count... " />
+            <marker date="1539878469774" expanded="true" signature="854:890" ph="SELECT * FRO... ${$tableName}" />
+            <marker date="1539878469774" expanded="true" signature="1318:1347" ph="INSERT INTO `${$tableName}`... " />
+            <marker date="1539878469774" expanded="true" signature="3015:3043" ph="DELETE FROM `${$tableName}`... " />
+            <marker date="1539878469774" expanded="true" signature="5930:5945" ph="..." />
+            <marker date="1539878469774" expanded="true" signature="6057:6072" ph="..." />
           </folding>
         </state>
       </provider>
@@ -616,9 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2505">
           <caret line="81" column="56" lean-forward="false" selection-start-line="81" selection-start-column="56" selection-end-line="81" selection-end-column="56" />
-          <folding>
-            <element signature="n#Generate_KeyChain#0;n#KeyChain#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -633,13 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/MinerDef/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="61" column="34" lean-forward="false" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -690,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4216">
           <caret line="125" column="45" lean-forward="false" selection-start-line="125" selection-start-column="27" selection-end-line="125" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7990">
           <caret line="235" column="29" lean-forward="false" selection-start-line="235" selection-start-column="29" selection-end-line="235" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
           <caret line="47" column="73" lean-forward="false" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="76" column="79" lean-forward="true" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -754,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1631">
           <caret line="166" column="9" lean-forward="false" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,59 +776,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Validate/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
+        <state relative-caret-position="1020">
           <caret line="30" column="9" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/MinerDef/MinerDefManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="201" column="8" lean-forward="false" selection-start-line="201" selection-start-column="8" selection-end-line="223" selection-end-column="40" />
-          <folding>
-            <element signature="n#GetAllSellsInfo#0;n#MinerSellInfo#0;n#!!top" expanded="false" />
-            <element signature="n#GetSurplus#0;n#MinerSellInfo#0;n#!!top" expanded="false" />
-            <element signature="n#CanSelled#0;n#MinerSellInfo#0;n#!!top" expanded="false" />
-            <element signature="n#SetMinerInfo#0;n#MinerDefManager#0;n#!!top" expanded="false" />
-            <element signature="n#CreateMiner#0;n#MinerDefManager#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Order/OrderManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="779" column="17" lean-forward="true" selection-start-line="764" selection-start-column="12" selection-end-line="779" selection-end-column="17" />
-          <folding>
-            <element signature="n#ShoppingController#0;n#!!top" expanded="false" />
-            <element signature="n#OrderSuccess#0;n#OrderManager#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/DataBase/DBManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="78" column="20" lean-forward="false" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
-          <folding>
-            <element signature="n#C#0;n#DBManager#0;n#!!top" expanded="false" />
-            <element signature="n#CreateDBLink#0;n#DBManager#0;n#!!top" expanded="false" />
-            <element signature="n#Finished#0;n#DBManager#0;n#!!top" expanded="false" />
-            <element signature="n#CountTableRow#0;n#DBManager#0;n#!!top" expanded="false" />
-            <element signature="n#DBManager#0;n#DBManager#0;n#!!top" expanded="false" />
-            <marker date="1538992398837" expanded="true" signature="854:890" ph="SELECT * FRO... ${$tableName}" />
-            <marker date="1538992398837" expanded="true" signature="1318:1347" ph="INSERT INTO `${$tableName}`... " />
-            <marker date="1538992398837" expanded="true" signature="3015:3043" ph="DELETE FROM `${$tableName}`... " />
-            <marker date="1538992398837" expanded="true" signature="5707:5722" ph="..." />
-            <marker date="1538992398837" expanded="true" signature="5834:5849" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/User/UserManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6067">
+        <state relative-caret-position="5984">
           <caret line="176" column="32" lean-forward="false" selection-start-line="176" selection-start-column="19" selection-end-line="176" selection-end-column="32" />
           <folding>
             <element signature="n#UpdateUUID#0;n#UserManager#0;n#!!top" expanded="false" />
@@ -828,20 +792,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Version/VersionManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding>
-            <element signature="n#IsVersionHigher#0;n#VersionManager#0;n#!!top" expanded="false" />
-            <element signature="n#IsVersion#0;n#VersionManager#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/conf.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="3774">
           <caret line="111" column="19" lean-forward="true" selection-start-line="111" selection-start-column="19" selection-end-line="112" selection-end-column="22" />
           <folding>
             <marker date="1539710511509" expanded="true" signature="3359:3564" ph="CREATE TABLE... ##DBName##" />
@@ -859,9 +812,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Version/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="1224">
+          <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Version/VersionManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="44" column="11" lean-forward="false" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+          <folding>
+            <element signature="n#IsVersionHigher#0;n#VersionManager#0;n#!!top" expanded="false" />
+            <element signature="n#IsVersion#0;n#VersionManager#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/MinerDef/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/MinerDef/MinerDefManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="134" column="105" lean-forward="false" selection-start-line="134" selection-start-column="90" selection-end-line="134" selection-end-column="105" />
+          <folding>
+            <element signature="n#GetAllSellsInfo#0;n#MinerSellInfo#0;n#!!top" expanded="false" />
+            <element signature="n#GetSurplus#0;n#MinerSellInfo#0;n#!!top" expanded="false" />
+            <element signature="n#CanSelled#0;n#MinerSellInfo#0;n#!!top" expanded="false" />
+            <element signature="n#SetMinerInfo#0;n#MinerDefManager#0;n#!!top" expanded="false" />
+            <element signature="n#CreateMiner#0;n#MinerDefManager#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/DataBase/DBManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="184" column="40" lean-forward="true" selection-start-line="184" selection-start-column="40" selection-end-line="184" selection-end-column="40" />
+          <folding>
+            <element signature="n#C#0;n#DBManager#0;n#!!top" expanded="false" />
+            <element signature="n#CreateDBLink#0;n#DBManager#0;n#!!top" expanded="false" />
+            <element signature="n#Finished#0;n#DBManager#0;n#!!top" expanded="false" />
+            <element signature="n#CountTableRow#0;n#DBManager#0;n#!!top" expanded="false" />
+            <element signature="n#DBManager#0;n#DBManager#0;n#!!top" expanded="false" />
+            <marker date="1539878469774" expanded="true" signature="553:599" ph="select count... " />
+            <marker date="1539878469774" expanded="true" signature="854:890" ph="SELECT * FRO... ${$tableName}" />
+            <marker date="1539878469774" expanded="true" signature="1318:1347" ph="INSERT INTO `${$tableName}`... " />
+            <marker date="1539878469774" expanded="true" signature="3015:3043" ph="DELETE FROM `${$tableName}`... " />
+            <marker date="1539878469774" expanded="true" signature="5930:5945" ph="..." />
+            <marker date="1539878469774" expanded="true" signature="6057:6072" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Order/OrderManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="763" column="29" lean-forward="false" selection-start-line="763" selection-start-column="29" selection-end-line="763" selection-end-column="29" />
+          <folding>
+            <element signature="n#ShoppingController#0;n#!!top" expanded="false" />
+            <element signature="n#OrderSuccess#0;n#OrderManager#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

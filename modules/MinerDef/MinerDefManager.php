@@ -121,6 +121,8 @@ class MinerDefManager extends DBManager{
 		
 		$conditionArray = [
 			'mdisplay' => $display,
+			'_orderby'=>'level',
+			'_orderrule'=>'DESC',
 			'_logic'=>' '
 		];
 		if($display == 0){

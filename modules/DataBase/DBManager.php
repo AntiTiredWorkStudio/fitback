@@ -155,6 +155,7 @@ class DBManager{
 		$con = $this->DBLink();  
 		$sql = 'SELECT '.$field.' FROM `'.$tableName.'`';	
 		
+
 		if(!empty($conArray)){
 			$cond = ((isset($conArray['_logic']) && $conArray['_logic']=="AND")?(1):(0));
 			
@@ -162,6 +163,9 @@ class DBManager{
 			
 			
 			foreach($conArray as $key=>$value){
+			    if(strpos($key, '_') === 0){
+			        continue;
+                }
 				if($value=="" || $key=='_logic'){
 					continue;
 				}
@@ -181,9 +185,11 @@ class DBManager{
 		if(!empty($conArray)){
 			$sql = $sql.' WHERE '.$cond;
 		}
-
-		//file_put_contents(time().'.txt',$sql);
-
+		
+		if(isset($conArray['_orderby']) && isset($conArray['_orderrule'])){
+			
+            $sql = $sql.' ORDER BY '.'`'.$conArray['_orderby'].'` '.$conArray['_orderrule'];
+        }
 		$result = mysql_query($sql,$con);
 		if($closeDBLink){
 			mysql_close($con);
